@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUp, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowUp, Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "../common/Icons";
 
 export const AtharvaFooter: React.FC = () => {

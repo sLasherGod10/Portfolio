@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "../common/FadeIn";
 import { LiveProjectButton } from "../common/LiveProjectButton";
-import { BookOpen, ShieldCheck, CheckCircle2 } from "lucide-react";
-import { Cloud, Sparkles, Database } from "lucide-react";
 
 interface ProjectData {
   number: string;
@@ -27,11 +25,11 @@ const projectsData: ProjectData[] = [
     tags: ["Python", "Gemini API", "LangChain", "Streamlit"],
     githubUrl: "https://github.com/sLasherGod10",
     col1Img1:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1280&q=85",
     col1Img2:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1280&q=85",
     col2Img:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1400&q=85",
   },
   {
     number: "02",
@@ -42,11 +40,11 @@ const projectsData: ProjectData[] = [
     tags: ["Python", "Machine Learning", "KNN", "Flask"],
     githubUrl: "https://github.com/sLasherGod10",
     col1Img1:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1280&q=85",
     col1Img2:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1280&q=85",
     col2Img:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85",
   },
   {
     number: "03",
@@ -57,11 +55,11 @@ const projectsData: ProjectData[] = [
     tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
     githubUrl: "https://github.com/sLasherGod10",
     col1Img1:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1280&q=85",
     col1Img2:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1280&q=85",
     col2Img:
-      "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=85",
   },
 ];
 
@@ -209,147 +207,6 @@ export const AtharvaProjectsSection: React.FC = () => {
               totalCards={projectsData.length}
             />
           ))}
-        </div>
-
-        {/* Dedicated Research Publication Spotlight Card */}
-        <div className="mt-20 pt-16 border-t border-[#D7E2EA]/15">
-          <FadeIn delay={0.1} y={30}>
-            <div className="text-center mb-12">
-              <span className="text-xs uppercase tracking-widest text-[#D7E2EA]/60 font-light block mb-2">
-                Academic Contributions
-              </span>
-              <h3 className="hero-heading text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight">
-                Published Research
-              </h3>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.2} y={30}>
-            <div className="rounded-[40px] sm:rounded-[50px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 sm:p-10 shadow-2xl relative overflow-hidden">
-              <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-xl bg-white/5 border border-[#D7E2EA]/30 text-[#D7E2EA]">
-                    <BookOpen className="w-5 h-5 text-[#BBCCD7]" />
-                  </div>
-                  <span className="text-xs uppercase tracking-widest text-[#D7E2EA]/70 font-mono">
-                    PICT Research Lab • 2026
-                  </span>
-                </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/10 text-white border border-[#D7E2EA]/30 uppercase tracking-wider">
-                  90.34% Peak Accuracy
-                </span>
-              </div>
-
-              <h4 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase text-[#D7E2EA] mb-4 leading-snug">
-                Dynamic Weight-Optimized Meta-Ensemble Learning for Generalized Cyberattack Detection Across Heterogeneous Datasets
-              </h4>
-
-              <p className="text-sm sm:text-base text-[#D7E2EA]/80 font-light leading-relaxed mb-6">
-                Proposed <strong>DWOME</strong> integrating <strong>6 distinct ML classifiers</strong> (XGBoost, Random Forest, LightGBM, Extra Trees, SVM, and Neural Stacker), dynamic sample-level weight optimization, entropy-based confidence scoring, and class-wise F1 reliability, evaluated rigorously using SMOTE across 5-, 10-, and 12-class datasets.
-              </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center pt-4 border-t border-[#D7E2EA]/15">
-                <div className="p-3 rounded-2xl bg-white/5 border border-[#D7E2EA]/10">
-                  <span className="text-xl sm:text-2xl font-black text-white font-mono">90.34%</span>
-                  <span className="text-[11px] uppercase tracking-wider text-[#D7E2EA]/60 block mt-1">Accuracy</span>
-                </div>
-                <div className="p-3 rounded-2xl bg-white/5 border border-[#D7E2EA]/10">
-                  <span className="text-xl sm:text-2xl font-black text-white font-mono">6 ML</span>
-                  <span className="text-[11px] uppercase tracking-wider text-[#D7E2EA]/60 block mt-1">Classifiers</span>
-                </div>
-                <div className="p-3 rounded-2xl bg-white/5 border border-[#D7E2EA]/10">
-                  <span className="text-xl sm:text-2xl font-black text-white font-mono">12 Class</span>
-                  <span className="text-[11px] uppercase tracking-wider text-[#D7E2EA]/60 block mt-1">Benchmark</span>
-                </div>
-                <div className="p-3 rounded-2xl bg-white/5 border border-[#D7E2EA]/10">
-                  <span className="text-xl sm:text-2xl font-black text-white font-mono">SMOTE</span>
-                  <span className="text-[11px] uppercase tracking-wider text-[#D7E2EA]/60 block mt-1">Balancing</span>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-
-        {/* Certifications Showcase Card Grid */}
-        <div className="mt-20 pt-16 border-t border-[#D7E2EA]/15">
-          <FadeIn delay={0.1} y={30}>
-            <div className="text-center mb-12">
-              <span className="text-xs uppercase tracking-widest text-[#D7E2EA]/60 font-light block mb-2">
-                Industry Credentials
-              </span>
-              <h3 className="hero-heading text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight">
-                Certifications
-              </h3>
-            </div>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Cert 1 */}
-            <FadeIn delay={0.15} y={30}>
-              <div className="h-full rounded-[36px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 flex flex-col justify-between shadow-xl">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <Cloud className="w-6 h-6 text-[#BBCCD7]" />
-                    <span className="text-[11px] uppercase tracking-widest text-[#D7E2EA]/60">Coursera</span>
-                  </div>
-                  <h4 className="text-lg font-bold uppercase text-[#D7E2EA] mb-2 leading-snug">
-                    Cloud Architecture Design Patterns
-                  </h4>
-                  <p className="text-xs text-[#D7E2EA]/70 font-light leading-relaxed">
-                    Mastery of distributed cloud patterns, resilience topologies, and scalable infrastructure.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#D7E2EA]/15 flex items-center gap-1.5 text-xs text-white">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#BBCCD7]" />
-                  <span>Verified Credential</span>
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* Cert 2 */}
-            <FadeIn delay={0.25} y={30}>
-              <div className="h-full rounded-[36px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 flex flex-col justify-between shadow-xl">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <Sparkles className="w-6 h-6 text-[#BBCCD7]" />
-                    <span className="text-[11px] uppercase tracking-widest text-[#D7E2EA]/60">Coursera</span>
-                  </div>
-                  <h4 className="text-lg font-bold uppercase text-[#D7E2EA] mb-2 leading-snug">
-                    GenAI for Data Engineers: Scaling with GenAI
-                  </h4>
-                  <p className="text-xs text-[#D7E2EA]/70 font-light leading-relaxed">
-                    Scaling Large Language Models, vector indexing, context engineering, and enterprise RAG.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#D7E2EA]/15 flex items-center gap-1.5 text-xs text-white">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#BBCCD7]" />
-                  <span>Verified Credential</span>
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* Cert 3 */}
-            <FadeIn delay={0.35} y={30}>
-              <div className="h-full rounded-[36px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 flex flex-col justify-between shadow-xl">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <Database className="w-6 h-6 text-[#BBCCD7]" />
-                    <span className="text-[11px] uppercase tracking-widest text-[#D7E2EA]/60">Coursera</span>
-                  </div>
-                  <h4 className="text-lg font-bold uppercase text-[#D7E2EA] mb-2 leading-snug">
-                    Building Smarter Data Pipelines: SQL, Spark, Kafka &amp; GenAI
-                  </h4>
-                  <p className="text-xs text-[#D7E2EA]/70 font-light leading-relaxed">
-                    Distributed stream processing with Kafka, Apache Spark pipelines, and AI query optimization.
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#D7E2EA]/15 flex items-center gap-1.5 text-xs text-white">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#BBCCD7]" />
-                  <span>Verified Credential</span>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
         </div>
       </div>
     </section>
